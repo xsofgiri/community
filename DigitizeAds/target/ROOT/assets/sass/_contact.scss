@@ -1,0 +1,125 @@
+
+/*----------------------------------------------
+	16.0 Contact Style
+-----------------------------------------------*/
+
+.contact-block-title {
+	h4 {
+		font-family: $bodyFont;
+		font-size: 2.0rem;
+		font-weight: 500;
+		color: $baseColor;
+	}
+}
+
+.contact-info {
+	.info-details {
+		margin-bottom: 30px;
+		h5 {
+			font-size: 1.6rem;
+			font-family: $bodyFont;
+			font-weight: 500;
+			color: $blackGrey;
+			margin-bottom: 10px;
+			text-transform: uppercase;
+		}
+		p {
+			font-size: 1.4rem;
+			font-family: $bodyFont;
+			font-weight: 400;
+			color: $fontColor;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.contact-form {
+	.form-group	{
+		position: relative;
+		.form-control {
+			font-size: 1.4rem;
+			color: $fontColor;
+			padding: 0;
+			border-radius: 0;
+			transition: all .3s ease;
+			border: 0;
+			border-bottom: 1px solid rgba($black, .1);
+			&:focus,
+			&:valid {
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		label {
+			position: absolute;
+			top: 1.4rem;
+			left: 0;
+			margin-bottom: 0;
+			transition: all .3s ease;
+			cursor: text;
+		}
+		.input-br {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 2px;
+			width: 0;
+			background: $baseColor;
+			transition: all .3s ease;
+		}
+		textarea.form-control {
+			padding-top: 13px;
+			height: 120px;
+			resize: none;
+		}
+		.form-control:valid ~ label,
+		.form-control:focus ~ label {
+		  top:-16px;
+		  color: $blackGrey;
+		}
+		.form-control:valid ~ .input-br,
+		.form-control:focus ~ .input-br {
+			width: 100%;
+		}
+	}
+	.button {
+		background: $baseColor;
+		color: $white;
+		border-radius: 30px;
+		padding: 9px 40px;
+	}
+}
+
+.contact-map {
+	height: 400px;
+}
+
+#contactForm {
+	position: relative;
+}
+.input-success,
+.input-error {
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 5px 15px !important;
+    margin-bottom: 0;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-success {
+    background-color: #27ae60;
+}
+.input-error {
+    background-color: #e74c3c;
+}
+
+@media all and (max-width: 991px) {
+	.contact-block-title {
+		margin-bottom: 30px;
+	}
+}

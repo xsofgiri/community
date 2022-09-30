@@ -1,0 +1,344 @@
+
+
+/*----------------------------------------------
+	02.0 Header Style
+-----------------------------------------------*/
+
+.header-bg-1 {
+	background: url('../images/bg/banner-bg-1.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.header-bg-2 {
+	background: url('../images/bg/banner-bg-2.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.header-banner {
+	padding: 300px 0 190px;
+	color: $white;
+	h1 {
+		font-family: $headerFont;
+		font-weight: 400;
+		font-size: 5.0rem;
+		margin-bottom: 15px;
+		span {
+			font-weight: 700;
+			color: $white;
+		}
+	}
+	p {
+		font-family: $bodyFont;
+		font-size: 1.8rem;
+		font-weight: 400;
+		margin-bottom: 50px;
+	}
+	.header-search-listing {
+		padding: 25px;
+		background: rgba($white, .15);
+		max-width: 870px;
+		margin: 0 auto;
+		border-radius: 100px;
+		.form-group.category {
+			flex: 0 0 40%;
+		}
+		.form-group.location {
+			flex: 0 0 36%;
+			position: relative;
+			&:after {
+				position: absolute;
+				top: 13px;
+				right: 38px;
+				content: '\e693';
+				font-family: 'themify';
+				color: $fontColor;
+			}
+		}
+		.form-control {
+			height: 50px;
+			width: 100%;
+			border-radius: 40px;
+			border: 0;
+			box-shadow: none;
+			outline: none;
+			padding: 0 20px;
+			font-size: 1.4rem;
+			margin-right: 20px;
+			color: $fontColor;
+			background: $white;
+			&::-webkit-input-placeholder { 
+			  color: $fontColor;
+			}
+			&::-moz-placeholder { 
+			  color: $fontColor;
+			}
+			&:-ms-input-placeholder { 
+			  color: $fontColor;
+			}
+			&:-moz-placeholder { 
+			  color: $fontColor;
+			}
+		}
+		.button {
+			flex: 0 0 24%;
+			font-size: 1.4rem;
+			font-family: $bodyFont;
+			font-weight: 400;
+			color: $white;
+			height: 50px;
+			border-radius: 25px;
+			border: 0;
+			box-shadow: none;
+			outline: none;
+			background: $baseColor;
+			&:active:focus {
+				outline: none;
+				box-shadow: none;
+			}
+			i {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.header-banner.header-banner-2 {
+	padding: 355px 0 260px;
+	h1 {
+		font-size: 5.0rem;
+		font-weight: 600;
+		color: $white;
+	}
+	p {
+		color: $white;
+	}
+	.header-search-listing {
+		padding: 30px;
+		border-radius: 3px;
+		background: $white;
+	  box-shadow: 0px 3px 5px 0px rgba($black, 0.1);
+	  .form-group {
+	  	border: 1px solid rgba($black, .08);
+	  	border-radius: 3px;
+	  	flex: 0 0 calc(76% - 20px);
+	  	margin-right: 20px;
+	  	padding: 10px 0;
+	  	position: relative;
+			&:after {
+				position: absolute;
+				bottom: 18px;
+				right: 18px;
+				content: '\e693';
+				font-family: 'themify';
+				color: $fontColor;
+			}
+	  	.form-control {
+	  		border-radius: 0;
+	  		margin-right: 0;
+	  		height: 40px;
+	  		width: 50%;
+	  		&.location {
+	  			position: relative;
+	  			border-left: 1px solid rgba($black, .08);
+	  		}
+	  	}
+	  }
+	  .button {
+	  	border-radius: 3px;
+	  	height: 62px;
+	  }
+	}
+}
+
+.section-header {
+	text-align: center;
+	margin-bottom: 50px;
+	h2 {
+		font-size: 3.8rem;
+		color: $woodBark;
+		font-weight: 600;
+		line-height: 1;
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 1.7rem;
+		color: $grey;
+		font-weight: 400;
+	}
+}
+
+.page-header-slider-wrap {
+	overflow: hidden;
+}
+
+.page-header-slider {
+	position: relative;
+	&:hover {
+		.slick-arrow {
+			opacity: 1;
+		}
+	}
+	.slick-list {
+		overflow: visible;
+	}
+	.slick-arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 40px;
+		width: 40px;
+		border-radius: 50%;
+		border: 1px solid rgba($white, .4);
+		background: rgba($black, .4);
+		color: $white;
+		line-height: 38px;
+		text-align: center;
+		z-index: 999;
+		cursor: pointer;
+		transition: all .3s ease;
+		opacity: 0;
+		&:hover {
+			color: $baseColor;
+		}
+		&.left {
+			left: 20px;
+		}
+		&.right {
+			right: 20px;
+		}
+	}
+	div.slick-slide {
+		position: relative;
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+	}
+	.slick-dots {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		li {
+			display: inline-block;
+			font-size: 0;
+			margin: 0 2px;
+			button {
+				font-size: 0;
+				padding: 0;
+				border: 0;
+				height: 8px;
+				width: 8px;
+				border-radius: 50%;
+				background: rgba($white, .4);
+			}
+			&.slick-active {
+				button {
+					background: $white;
+				}
+			}
+		}
+	}
+}
+
+.page-header {
+	padding: 160px 0;
+}
+.page-header-bg {
+	background: url(../images/bg/page-header-bg.jpg) center;
+	background-size: cover;
+}
+.page-header-bg.listing-page-header-bg {
+	background: url(../images/bg/listing-header-bg.jpg) center;
+}
+
+.page-header-block {
+	text-align: center;
+	color: $white;
+	h2 {
+		font-size: 3.6rem;
+		font-family: $headerFont;
+		font-weight: 600;
+		margin-bottom: 10px;
+	}
+	.default-breadcrumb {
+		.breadcrumb {
+			margin-bottom: 0;
+			background: transparent;
+			justify-content: center;
+			font-size: 1.5rem;
+			font-weight: 400;
+			font-family: $bodyFont;
+			.breadcrumb-item {
+				color: $white;
+				+ .breadcrumb-item {
+					&:before {
+						content: '-';
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 991px) {
+	.header-banner.header-banner-2 {
+		padding: 250px 0 200px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.header-banner {
+		.header-search-listing {
+			border-radius: 10px;
+			form.form-inline {
+				display: block;
+				.form-group {
+					margin-bottom: 20px;
+					.form-control {
+						margin-right: 0;
+					}
+					&.location {
+						&:after {
+							right: 20px;
+						}
+					}
+				}
+				.button {
+					width: 180px;
+				}
+			}
+		}
+	}
+	.header-banner.header-banner-2 {
+		.header-search-listing {
+			.form-group {
+				padding: 0;
+				display: block;
+				margin-right: 0;
+				border: 0;
+				.form-control {
+					width: 100%;
+					border: 1px solid rgba($black, .08);
+					height: 60px;
+					border-radius: 3px;
+					+ .form-control {
+					 	margin-top: 20px;
+					 }
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 575px) {
+	.page-header {
+		padding: 130px 0;
+	}
+}
+

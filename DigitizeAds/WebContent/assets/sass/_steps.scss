@@ -1,0 +1,55 @@
+
+
+/*----------------------------------------------
+	06.0 Steps Style
+-----------------------------------------------*/
+
+.start-setps {
+	margin-bottom: 23px;
+	.icon {
+		margin-bottom: 30px;
+	}
+	h3 {
+		font-family: $bodyFont;
+		font-weight: 500;
+		font-size: 1.8rem;
+		color: $blackGrey;
+		margin-bottom: 20px;
+	}
+	p {
+		color: $fontColor;
+	}
+}
+
+.step-numbers {
+	position: relative;
+	margin-bottom: 30px;
+	&:before {
+		position: absolute;
+		top: 17px;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background: rgba($black, .08);
+		content: '';
+	}
+	.step-number {
+		text-align: center;
+		span {
+			height: 35px;
+			width: 35px;
+			border-radius: 50%;
+			line-height: 35px;
+			text-align: center;
+			border: 1px solid rgba($black, .05);
+			display: inline-block;
+			background: $white;
+		}
+	}
+}
+
+@media all and (max-width: 991px) {
+	.step-numbers {
+		display: none;
+	}
+}

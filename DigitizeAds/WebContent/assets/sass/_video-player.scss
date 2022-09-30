@@ -1,0 +1,28 @@
+
+
+/*----------------------------------------------
+	12.0 Video Player Style
+-----------------------------------------------*/
+
+.listing-video {
+	.plyr--video {
+		border-radius: 5px;
+	}
+	.plyr--full-ui input[type=range] {
+		color: $baseColor;
+	}
+	.plyr__control {
+		background: $baseColor;
+		color: $white;
+		&:hover {
+			background: $baseColor;
+		}
+	}
+	.plyr__control--overlaid {
+		height: 70px;
+		width: 70px;
+		svg {
+			left: 12px;
+		}
+	}
+}

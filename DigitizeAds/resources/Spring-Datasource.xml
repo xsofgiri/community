@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+<!-- 		Local DB -->
+		<property name="url" value="jdbc:mysql://localhost:3306/adwit_digitized_ads?characterEncoding=utf8&amp;useSSL=false" />
+		<property name="username" value="root" />
+		<property name="password" value="xsofgiri" />
+		
+			
+			
+<!-- 			<property name="url" value="jdbc:mysql://adwit-rds.cc2gj0rezoxt.ap-south-1.rds.amazonaws.com/adwit_digitized_ads" /> -->
+<!-- 			<property name="username" value="adwit_un_global" /> -->
+<!-- 			<property name="password" value="adwit_jme7lf7l1h" /> -->
+			
+	</bean>
+	
+</beans>

@@ -1,0 +1,48 @@
+
+/*----------------------------------------------
+	17.0 Pagination Style
+-----------------------------------------------*/
+
+
+.pagination {
+	&.mar-30 {
+		margin-top: 20px;
+	}
+	&.mar-60 {
+		margin-top: 50px;
+	}
+	&.text-center {
+		.nav-links {
+			width: 100%;
+		}
+	}
+	.nav-links {
+		.page-numbers {
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			border: 1px solid rgba($black, .1);
+			border-radius: 50px;
+			display: inline-block;
+			outline: none;
+			text-decoration: none;
+			margin: 10px 5px 0;
+			text-align: center;
+			transition: all .3s ease;
+			color: $fontColor;
+			position: relative;
+			z-index: 2;
+			&.current {
+				color: $white;
+				border-color: transparent;
+				background: $baseColor;
+			}
+		}
+	}
+}
+
+
+
+
+
+ 

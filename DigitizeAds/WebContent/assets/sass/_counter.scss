@@ -1,0 +1,23 @@
+
+/*----------------------------------------------
+	15.0 Counter Style
+-----------------------------------------------*/
+
+.fact {
+	text-align: center;
+	margin-bottom: 30px;
+	.fact-number {
+		font-size: 4.2rem;
+		color: $baseColor;
+		font-family: $headerFont;
+		font-weight: 600;
+		margin-bottom: 0;
+		line-height: 1;
+	}
+	.fact-name {
+		font-size: 1.8rem;
+		color: $blackGrey;
+		line-height: 1;
+		margin-top: 10px;
+	}
+}

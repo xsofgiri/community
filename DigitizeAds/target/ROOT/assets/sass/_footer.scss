@@ -1,0 +1,171 @@
+
+
+/*----------------------------------------------
+	10.0 Footer Style
+-----------------------------------------------*/
+
+.footer-bg {
+	background: url(../images/bg/footer-bg.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.footer-widget {
+	margin-bottom: 30px;
+	color: $silver;
+	.footer-widget-title {
+		font-family: $bodyFont;
+		font-weight: 400;
+		font-size: 1.8rem;
+		color: $white;
+		position: relative;
+		margin-bottom: 40px;
+	}
+	&.footer-about {
+		.logo {
+			margin-bottom: 38px;
+		}
+		.copyright-text {
+			margin-bottom: 40px;
+		}
+		.social-links {
+			margin-top: 20px;
+			a {
+				color: $offWhite;
+				margin-right: 20px;
+				font-size: 1.8rem;
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+	}
+	&.footer-widget-contact {
+		.office-address {
+			margin-bottom: 20px;
+		}
+		span {
+			color: $white;
+		}
+	}
+	&.footer-widget-links {
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			li {
+				+ li {
+					margin-top: 12px;
+				}
+				a {
+					&:hover {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	&.footer-widget-apps {
+		.app-download-links {
+			a {
+				margin-right: 10px;
+			}
+			a + a {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	padding: 52px 0;
+	.footer-nav {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: flex;
+		li {
+			a {
+				color: $offWhite;
+				padding-right: 12px;
+				margin-right: 20px;
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+	}
+	.apps-download {
+		display: flex;
+		justify-content: center;
+		a {
+			margin: 0 15px;
+		}
+	}
+	.backtotop {
+		display: flex;
+		justify-content: flex-end;
+		a {
+			color: $offWhite;
+			&:hover {
+				color: $white;
+			}
+			i {
+				margin-left: 8px;
+			}
+		}
+	}
+}
+
+.newsletter-form {
+	position: relative;
+}
+.newsletter-success,
+.newsletter-error {
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 5px 15px !important;
+    margin-bottom: 0;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.newsletter-success {
+    background-color: #27ae60;
+}
+.newsletter-error {
+    background-color: #e74c3c;
+}
+
+@media all and (max-width: 991px) {
+	.footer-bottom {
+		text-align: center;
+		.footer-nav {
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px 0;
+			li {
+				a {
+					margin-right: 0;
+					padding: 0 10px;
+				}
+			}
+		}
+		.backtotop {
+			justify-content: center;
+		}
+	}
+	.footer-widget {
+		.footer-widget-title {
+			margin-bottom: 25px;
+		}
+		&.footer-about {
+			.logo {
+				margin-bottom: 18px;
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+
+/*----------------------------------------------
+	14.0 About Style
+-----------------------------------------------*/
+
+.featured-content {
+	h2 {
+		font-size: 3.6rem;
+		color: $woodBark;
+		font-weight: 600;
+		font-family: $headerFont;
+		margin-bottom: 35px;
+		span {
+			font-weight: 700;
+		}
+	}
+	p {
+		font-size: 1.5rem;
+		font-family: $bodyFont;
+		font-weight: 400;
+		color: $fontColor;
+	}
+	p + p {
+		margin-top: 20px;
+	}
+	p + ul {
+		margin-top: 20px;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li + li {
+			margin-top: 10px;
+		}
+		li {
+			padding-left: 30px;
+			position: relative;
+			font-size: 1.5rem;
+			&:before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: '\f058';
+				font-family: 'Font Awesome\ 5 Free';
+				font-weight: 900;
+				color: $grey9;
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 991px) {
+	.featured-content {
+		margin-top: 30px;
+	}
+}

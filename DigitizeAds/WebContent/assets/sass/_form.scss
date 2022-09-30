@@ -1,0 +1,48 @@
+
+
+/*----------------------------------------------
+	08.0 Form Style
+-----------------------------------------------*/
+
+form {
+	.form-group {
+		margin-bottom: 25px;
+	}
+	.form-control {
+		box-shadow: none;
+		outline: none;
+		background: transparent;
+		font-size: 1.4rem;
+		height: 50px;
+		&:focus {
+			box-shadow: none;
+			outline: none;
+			background: transparent;
+		}
+	}
+	.button {
+		background: transparent;
+		border: 0;
+		box-shadow: none;
+		outline: none;
+		cursor: pointer;
+		padding: 12px 30px;
+		font-size: 1.5rem;
+		font-family: $bodyFont;
+		font-weight: 400;
+	}
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: transparent;
+}

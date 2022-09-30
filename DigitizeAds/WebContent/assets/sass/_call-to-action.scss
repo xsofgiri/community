@@ -1,0 +1,77 @@
+
+/*----------------------------------------------
+	09.0 Call to Action Style
+-----------------------------------------------*/
+
+.call-to-action-bg {
+	background: $baseColor;
+}
+
+.call-to-action-wrap {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.call-to-action-content {
+		color: $white;
+		h3 {
+			font-size: 3.6rem;
+			font-family: $headerFont;
+			font-weight: 600; 
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 1.5rem;
+			font-family: $bodyFont;
+			font-weight: 400;
+		}
+	}
+	.call-to-action-button {
+		a {
+			color: $white;
+			border: 2px solid $white;
+			border-radius: 40px;
+			font-size: 1.8rem;
+			font-family: $bodyFont;
+			font-weight: 400;
+			padding: 11px 30px 11px 68px;
+			position: relative;
+			span {
+				position: absolute;
+				top: 6px;
+				left: 6px;
+				height: 44px;
+				width: 44px;
+				border: 1px dashed $white;
+				border-radius: 50%;
+				display: inline-block;
+				line-height: 44px;
+				text-align: center;
+			}
+		}
+	}
+	.call-to-action-shape {
+		max-width: 720px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@media all and (max-width: 991px) {
+	.call-to-action-wrap {
+		.call-to-action-shape {
+			display: none;
+		}
+	}
+}
+
+@media all and (max-width: 767px) {
+	.call-to-action-wrap {
+		display: block;
+		.call-to-action-button {
+			margin-top: 30px;
+		}
+	}
+}

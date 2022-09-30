@@ -1,0 +1,72 @@
+.card_image_container {
+  padding: 1rem;
+}
+.FEATURED_BUSINESSES h2,
+.FEATURED_BUSINESSES h1 {
+  color: #808080;
+}
+/* scroll */
+.horizontal-scroll-wrapper.homepage_promo {
+  padding-bottom: 17px;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+}
+.horizontal-scroll-wrapper.homepage_promo > div {
+  height: auto;
+  width: auto;
+  margin: 10px 0 10px 5px;
+  text-align: center;
+  border: none;
+}
+.horizontal-scroll-wrapper > div {
+  display: block;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: none;
+  transform: none;
+  display: inline-block;
+}
+@media only screen and (max-width: 1555px) {
+  .horizontal-scroll-wrapper.homepage_promo {
+    overflow-x: scroll;
+  }
+}
+/* changes */
+
+.homepage_promo {
+  overflow-x: hidden !important;
+  padding-bottom: 1rem;
+}
+.element_class a {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: white;
+  font-size: 1.1rem;
+}
+.element_class a i {
+  padding: 0;
+}
+.element_class a:hover {
+  text-decoration: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .homepage_promo {
+    overflow-x: scroll !important;
+  }
+  .horizontal-scroll-wrapper.homepage_promo > div {
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+  }
+  .element_class a{
+    font-size: 1.35rem;
+  }
+}

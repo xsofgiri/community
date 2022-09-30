@@ -1,0 +1,26 @@
+.mdl-grid {
+  max-width: 600px;
+}
+.mdl-card__media {
+  margin: 0;
+}
+.mdl-card__media > img {
+  max-width: 100%;
+}
+.mdl-card__actions {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+.mdl-card__actions > .mdl-button--icon {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.mdl-shadow--2dp {
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 15px 10px -2px rgb(0 0 0 / 20%),
+    0 1px 5px 0 rgb(0 0 0 / 12%) !important;
+}
+.card:hover {
+  transform: scale(0.95);
+  transition: 0.8s;
+}
